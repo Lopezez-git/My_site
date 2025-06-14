@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    background-color: rgb(75, 4, 75);
+    padding: 20px 40px;
+    color: white;
+}
+
+header h1 {
+    color: white;
+    font-size: 24px;
+}
+
+header ul {
+    display: flex;
+    list-style-type: none;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+header li {
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+header li:hover {
+    color: rgb(255, 200, 0);
+}
+
+header h1:hover{
+
+    color:rgb(255, 200, 0)
+}
+.boas-vindas-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 60px 40px;
+    margin: 40px auto;
+    border-radius: 12px;
+    max-width: 1000px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    gap: 40px;
+}
+
+.boas-vindas-texto {
+    flex: 1;
+}
+
+.boas-vindas-texto h2 {
+    font-size: 26px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.boas-vindas-texto button {
+    background-color: #8e44ad;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.boas-vindas-texto button:hover {
+    background-color: #732d91;
+    transform: scale(1.05);
+}
+
+.boas-vindas-imagem {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.boas-vindas-imagem img {
+   
+    width: 300px; /* ou 250px, 200px, você escolhe */
+    height: auto;
+    border-radius: 8px;
+}
+
