@@ -3,48 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-
+main{
     background: linear-gradient(135deg, #e7e7e7, #ded3b1);
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    background-color: #4e342e;
-    padding: 20px 40px;
-    color: white;
-}
 
-header h1 {
-    color: white;
-    font-size: 24px;
-}
-
-header ul {
-    display: flex;
-    list-style-type: none;
-    gap: 30px;
-    margin: 0;
-    padding: 0;
-}
-
-header li {
-    color: white;
-    cursor: pointer;
-    transition: color 0.3s;
-}
-
-header li:hover {
-    color: rgb(255, 200, 0);
-}
-
-header h1:hover{
-
-    color:rgb(255, 200, 0)
-}
 .boas-vindas-container {
     display: flex;
     justify-content: space-between;
@@ -95,5 +58,79 @@ header h1:hover{
     width: 300px; /* ou 250px, 200px, você escolhe */
     height: auto;
     border-radius: 8px;
+}
+#btn-trocar {
+    background-color: transparent;
+    color: #849929; /* cor discreta que ainda combina */
+    border: 1px solid #849929;
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-size: 16px;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: all 0.3s ease;
+    height: 50%;
+    margin-top: 50%;
+    margin-left: 10px;
+}
+
+#btn-trocar:hover {
+    background-color: #d1e24d;
+    color: white;
+    opacity: 1;
+    transform: scale(1.05);
+}
+section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    padding: 40px;
+    
+}
+
+section div {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 200px;
+    text-align: center;
+    padding: 16px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+section img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+section p {
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+section button {
+    margin: 5px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #d5d03e;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+section button:hover {
+    background-color: #7d8025;
 }
 

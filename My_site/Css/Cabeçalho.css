@@ -1,0 +1,47 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    background-color: #4e342e;
+    padding: 20px 40px;
+    color: white;
+}
+
+header h1 {
+    color: white;
+    font-size: 24px;
+}
+
+header ul {
+    display: flex;
+    list-style-type: none;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+header li {
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+.cabeçalho li img {
+    width: 24px;   
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.cabeçalho li img:hover {
+    transform: scale(1.1);
+}
+
+header li:hover {
+    color: rgb(255, 200, 0);
+}
+
+header h1:hover{
+
+    color:rgb(255, 200, 0)
+}
