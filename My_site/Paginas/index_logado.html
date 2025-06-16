@@ -16,23 +16,23 @@
 
         <div>
             <ul>
-                <li><a href="login.html">Entrar</a></li>
-                <li><a href="cadastro.html">Cadastrar-se</a></li>
+                <li ><a id="Meu_nome" href=""></a></li>
                 <li><a href="">Livros</a></li>
                 <li><img src="../imgs/carrinho-de-compras.png" alt=""></li>
             </ul>
         </div>
     </header>
     <main>
+        <main>
         <div class="boas-vindas-container">
             <div class="boas-vindas-texto">
                 <h2>
                     Seja bem-vindo à minha livraria,<br>
                     aqui você encontra centenas de livros
                     para todos os gostos. <br>
-                    Comece se cadastrando!!
+                    Agora que você esta logado, você tem acesso a 100% do site!!
                 </h2>
-                <a href="cadastro.html"><button>Cadastrar-se</button></a>
+                
             </div>
 
             <div class="boas-vindas-imagem">
@@ -126,12 +126,13 @@
     </footer>
 
     <script src="../Scripts/Passar_livros.js"></script>
+
     <script src="../Scripts/logado.js"></script>
 
     <script>
-        if(localStorage.getItem("logado") === "true"){
+        if(localStorage.getItem("logado") !== "true"){
 
-            window.location.href = "./index_logado.html"
+            window.location.href = "./index.html"
         }
     </script>
 

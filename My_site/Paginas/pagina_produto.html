@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Css/Cabeçalho.css">
+    <link rel="stylesheet" href="../Css/pagina_produto.css">
+</head>
+
+<body>
+    <header class="cabeçalho">
+        <h1><a href="index.html">My BookStore</a></h1>
+
+        <div>
+            <ul>
+                <li><a id="nome" href="cadastro.html">Cadastrar-se</a></li>
+                <li><a href="">Livros</a></li>
+                <li><img src="../imgs/carrinho-de-compras.png" alt=""></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="livro-container">
+            <div class="livro-esquerda">
+                <h1 id="book-name"></h1>
+                <img id="imagem-livro" src="" alt="foto-do-produto">
+            </div>
+
+            <div class="livro-direita">
+                <p id="sinopse" class="sinopse">
+                    
+                </p>
+                <p id="preco" class="preco"></p>
+                <button>Comprar</button>
+                <button>Adicionar ao carrinho</button>
+
+                <div class="detalhes-livro">
+                    <h2>Informações do Livro</h2>
+                    <ul>
+                        <li id="paginas"><strong>Páginas:</strong></li>
+                        <li id="idioma"><strong>Idioma:</strong></li>
+                        <li id="dataPublica"><strong>Publicação:</strong></li>
+                        <li id="editora"><strong>Editora:</strong> </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <section class="autora">
+            <div>
+                <p id="autor"></p>
+                <img id="imagemAutor" src="" alt="foto-do(a)-autor(a)">
+            </div>
+            <div>
+                <p id="biografiaAutor">
+                    
+                </p>
+            </div>
+        </section>
+    </main>
+
+
+<script src="../Scripts/pagina_produtos.js"></script>
+
+<script>
+    if (localStorage.getItem("logado") === "true") {
+        // Recupera a string e transforma em objeto
+        var nomeUsuario = JSON.parse(localStorage.getItem("usuario"));
+
+        // Acessa a propriedade "nome"
+        document.getElementById("nome").innerHTML = nomeUsuario.nome;
+
+        document.getElementById("nome").href = "perfil.html";
+    }
+</script>
+</body>
+
+</html>

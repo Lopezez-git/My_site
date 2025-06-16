@@ -1,10 +1,9 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 main{
     background: linear-gradient(135deg, #e7e7e7, #ded3b1);
+    min-height: 100vh; 
+    padding: 40px 20px;
+    
 }
 
 

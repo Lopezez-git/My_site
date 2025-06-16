@@ -1,0 +1,119 @@
+main {
+    padding: 40px;
+    background: linear-gradient(135deg, #e7e7e7, #ded3b1);
+}
+
+.livro-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.livro-esquerda {
+    flex: 1;
+}
+
+.livro-esquerda h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.livro-esquerda img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.livro-direita {
+    flex: 1;
+    max-width: 600px;
+}
+
+.livro-direita .sinopse {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.livro-direita .preco {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.livro-direita button {
+    margin: 5px;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: #d5d03e;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.livro-direita button:hover {
+    background-color: #7d8025;
+}
+
+/* Informações do livro */
+.detalhes-livro {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.detalhes-livro h2 {
+    margin-bottom: 15px;
+    color: #333;
+    font-size: 20px;
+}
+
+.detalhes-livro ul {
+    list-style: none;
+    padding: 0;
+}
+
+.detalhes-livro li {
+    margin-bottom: 8px;
+    color: #555;
+    font-size: 15px;
+}
+
+/* Biografia da autora */
+.autora {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    width: 80%;
+}
+
+.autora img {
+    width: 280px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.autora p {
+    font-size: 16px;
+    color: #444;
+    max-width: 600px;
+}
