@@ -1,0 +1,62 @@
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: #333;
+}
+
+#lista-carrinho {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+#lista-carrinho div {
+    background-color: #ffffff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+#lista-carrinho img {
+    width: 100px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+main{
+    background: linear-gradient(135deg, #e7e7e7, #ded3b1);
+    min-height: 100vh; 
+    padding: 40px 20px;
+    
+}
+#lista-carrinho h3 {
+    margin: 0;
+    color: #222;
+}
+
+#lista-carrinho p {
+    margin: 5px 0;
+    color: #555;
+}
+
+#lista-carrinho button {
+    padding: 6px 12px;
+    background-color: #d62828;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#lista-carrinho button:hover {
+    background-color: #b71d1d;
+}
+
+#total {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 40px;
+}

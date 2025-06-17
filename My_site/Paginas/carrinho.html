@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../Css/Cabeçalho.css">
+    <link rel="stylesheet" href="../Css/carrinho.css">
+</head>
+
+<header class="cabeçalho">
+    <h1><a href="index.html">My BookStore</a></h1>
+
+    <div>
+        <ul>
+            <li><a id="Meu_nome" href=""></a></li>
+            <li><a href="">Livros</a></li>
+            <li><a href="carrinho.html"><img src="../imgs/carrinho-de-compras.png" alt=""></a></li>
+        </ul>
+    </div>
+</header>
+
+<body>
+
+    <body>
+        <main>
+            <h1>Meu Carrinho</h1>
+            <div id="lista-carrinho"></div>
+            <p id="total"></p>
+
+        </main>
+        <script src="../Scripts/paginaCarrinho.js"></script>
+
+        <script>
+
+            var usuario = JSON.parse(localStorage.getItem("usuario"));
+
+            if (localStorage.getItem("logado") === "true") {
+
+                var perfil = document.getElementById("Meu_nome");
+
+                perfil.innerHTML = usuario.nome;
+
+                perfil.href = "./perfil.html"
+            }
+        </script>
+    </body>
+
+</body>
+
+</html>
